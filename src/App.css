@@ -8,3 +8,14 @@ font-weight: bolder;}
 font-size: 2rem;}
 
 .Grcart{height: 50px;}
+
+.carga{margin:10% 35%;
+font-size: 4rem;
+white-space: nowrap;}
+
+.ola{  display: grid!important;
+
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr))!important;
+    
+
+  }
