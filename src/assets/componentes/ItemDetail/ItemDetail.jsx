@@ -7,7 +7,7 @@ console.log(product)
     const onAdd= (cantidad) => {
        console.log (`Cantidad de productos seleccionados: ${cantidad}`)
 
-
+    }
    
     return (
         <div className="row">
@@ -31,6 +31,6 @@ console.log(product)
 
         </div>
     )
-    }
+    
 }
     export default ItemDetail
