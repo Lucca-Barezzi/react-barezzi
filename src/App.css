@@ -13,9 +13,9 @@ font-size: 2rem;}
 font-size: 4rem;
 white-space: nowrap;}
 
-.ola{  display: grid!important;
+.fotos{height: 25vh!important;
+    border: solid;
+    width: 13vw;
+color: black;}
 
-    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr))!important;
-    
-
-  }
+.productos{color: black;}
