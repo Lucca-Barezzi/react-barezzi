@@ -19,7 +19,7 @@ const ItemListContainer = () => {
             .catch( err => console.log( err ) )
             .finally(()=> setLoading(false))             
         } else {
-            gFetch() 
+            gFetch()     
             .then( resp =>  setProducts(resp) )   
             .catch( err => console.log( err ) )
             .finally(()=> setLoading(false))            
@@ -41,7 +41,7 @@ const ItemListContainer = () => {
    <div> 
       
    {<ItemList products={products}/>}
-   <ItemCount/> 
+ 
         
 
 </div> 

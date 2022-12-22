@@ -17,7 +17,7 @@ export const ItemCount = ( { stock = 5, inital=1 ,onAdd }) => {
    
     
     return (
-        <center className="mt-5 container-sm border border-1 border-primary p-3 rounded">
+        <center className="mt-5 container-sm border border-1 border-primary p-3 rounded" style={{width:"10rem"}}>
             <button 
                 className="btn btn-outline-primary" 
                 onClick={handleCount} 
