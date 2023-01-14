@@ -1,21 +1,21 @@
+import { memo } from "react"
 import Item from "../Item/Item"
 
-const ItemList = ({products} ) => {
-
+const ItemList =memo( ({products})  => {
 
   return (
 
-    <div style={{
+    <div  style={{
       display: 'flex',
       flexDirection: 'row',
-      flexWrap: 'wrap'
+      flexWrap: 'wrap',
     }}>
       {products.map(product =>  <Item key={product.id} product={product} /> )}
 
     </div>
     
-   
   )
 }
+)
 
 export default ItemList

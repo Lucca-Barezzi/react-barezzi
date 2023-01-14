@@ -16,6 +16,60 @@ white-space: nowrap;}
 .fotos{height: 25vh!important;
     border: solid;
     width: 15vw;
-color: black;}
+color: black;
+}
 
 .productos{color: black;}
+
+.fondo{background-image: url("https://img.freepik.com/fotos-premium/fondo-textura-papel-arrugado-negro-oscuro-cerca_99266-411.jpg?w=2000")!important;
+min-height: 100vh;
+height: 100%;
+width: 100%;}
+
+.navg{background:linear-gradient(to bottom,black,rgb(30, 30, 30),rgb(70, 69, 69))!important;
+font-family:cursive}
+
+.card-header{text-decoration: none!important;}
+
+A:link {text-decoration: none }
+
+.cart{background-color: white;}
+
+.cursive{font-family: cursive!important;}
+
+
+
+
+.loader {
+    margin:auto;
+    border: 10px solid #f3f3f3; /* color de borde del círculo */
+    border-top: 8px solid #3498db; /* color del borde superior */
+    border-radius: 50%; /* hace que el círculo sea redondo */
+    width: 150px; /* tamaño del círculo */
+    height: 150px; /* tamaño del círculo */
+    animation: spin 2s linear infinite; /* animación para hacer que el círculo gire */
+}
+
+/* keyframe de la animación */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.cartFoto{width: 10rem;
+height: 12rem;
+margin-top: 1rem;}
+
+.Footer{position: absolute;
+bottom: 0;
+margin-top: 4rem!important;
+width: 100%;}
+
+.body{position: relative;
+padding-bottom: 3rem;
+min-height: 100vh
+;}
+
+.descripcion{font-size: 1rem ;}
+
+.form{width: 50vw;}
