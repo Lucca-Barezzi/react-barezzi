@@ -6,12 +6,15 @@ import { useState } from "react";
 const ItemDetail = ({ product }) => { 
     const [ isCount, setIsCount ] = useState(true)
     const { addCart, cartList } =  useCartContext()
+
+
+
     const onAdd= (cantidad) => {
 
     addCart( { ...product, cantidad } )
     setIsCount(false)
 }
-
+if (cartList<0){ItemCount=true}
     return (
  
     
@@ -27,6 +30,7 @@ const ItemDetail = ({ product }) => {
                 <h4 className="text-white mt-4">Stock: {product.stock}</h4>
               
             <div >
+
                 <ItemCount 
                 
                     stock={product.stock}

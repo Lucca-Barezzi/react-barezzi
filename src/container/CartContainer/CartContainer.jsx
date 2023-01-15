@@ -27,7 +27,8 @@ console.log(cartList)
         </>          
         )}
 
-{cartList.lenght === 0 &&( <Link className="text-danger" to='/'>ir al inicio</Link> )}
+{cartList.lenght === 0 ? ('') 
+:(<center> <Link className="text-white pb-3 fs-2 btn btn-danger mt-5 cursive" to='/'>Ir al inicio <br /><h1 className="text-muted cursive">(Carrito vacio)</h1></Link> </center>)}
         
         <InputForm />
       

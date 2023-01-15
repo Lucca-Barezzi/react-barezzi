@@ -3,7 +3,8 @@ import { useState } from "react"
 
 export const ItemCount = ( { stock = 5, inital=1 ,onAdd }) => {
     const [ count, setCount ] = useState(inital) 
-    const [booleano, setBooleano] = useState([])
+    const [booleano, setBooleano] = useState([true]) 
+
     const handleCount = () => {
          if(count < stock) {
              console.log(stock)
