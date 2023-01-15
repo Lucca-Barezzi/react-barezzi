@@ -121,8 +121,8 @@ return (
       {orderId && !loading && (
         <>
         
-          <h2 style={{ color: "red" }}>
-            Order created successfully. Id {orderId}
+         <h2 className="bg-dark text-white cursive" style={{ color: "red" , width:"60vw" }}>
+            Su orden fue recibida con exito Id: {orderId}
           </h2>
         </>
       )}

@@ -7,7 +7,7 @@ export const ItemCount = ( { stock = 5, inital=1 ,onAdd }) => {
 
     const handleCount = () => {
          if(count < stock) {
-             console.log(stock)
+             
             setCount(count + 1)            
         } 
     }
