@@ -1,7 +1,7 @@
 
 import { useCartContext } from "../../Context/CartContext"
 import InputForm from "../../Components/InputForm/InputForm"
-
+import { Link } from "react-router-dom"
 
 
 const CartContainer = () => {
@@ -16,15 +16,22 @@ console.log(cartList)
                 className="btn btn-light"
                 onClick={() => deleteItem(product.id)}
             >X</button></li>)}
-        <h1 className="text-white">Total Price:$ {finalPrice()}</h1>
-        <br></br>
-        <button
+
+     {cartList.lenght > 0 && (
+       <>        <h1 className="text-white">Total Price:$ {finalPrice()}</h1>
+                 <br></br>
+                   <button
             className="btn btn-dark"
             onClick={deleteCart}
-        >Delete Cart</button>
-  
+                >Delete Cart</button>
+        </>          
+        )}
+
+{cartList.lenght === 0 &&( <Link className="text-danger" to='/'>ir al inicio</Link> )}
+        
         <InputForm />
       
+          
 
     </div>
 )
