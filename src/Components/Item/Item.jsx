@@ -20,7 +20,7 @@ export const Item =memo( ({ product }) => {
                         <img src={product.foto} alt='' className='fotos' />
                    <div className="text-dark text-center cursive fw-bo" >  $   {product.price}    </div>                                                        
                     </div>
-                    <div className="text-white bg-dark cursive w-100 text-center">Ver detalle <span >➔</span> </div>
+                    <div className="text-white bg-dark cursive w-100 text-center">More Details   <span >➔</span> </div>
                    
                 </div>
 

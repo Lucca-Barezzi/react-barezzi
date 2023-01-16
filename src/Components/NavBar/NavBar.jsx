@@ -27,7 +27,7 @@ const NavBar = (   ) => {
       </ul>
 </div>
 
-     <NavLink  className={"fw-bold fs-1  text-danger cursive text-center title  "}to='/' href="#">Mi Store</NavLink>'
+     <NavLink  className={"fw-bold fs-1  text-danger cursive text-center title  "}to='/' href="#">My Store</NavLink>'
     
       <Link to='/cart' >
 <CartWidget/>
