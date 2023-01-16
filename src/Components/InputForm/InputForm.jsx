@@ -1,4 +1,3 @@
-import React from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { getFirestore, collection, addDoc } from "firebase/firestore";
@@ -124,7 +123,7 @@ return (
       {orderId && !loading && (
         <>
         
-         <h2 className="bg-dark text-white cursive" style={{ color: "red" , width:"60vw" }}>
+        <h2 className="bg-dark text-white cursive bg-opacity-50 " style={{ color: "red" , width:"60vw" }}>
             Your order has been succesfully received Id: {orderId}
           </h2>
         </>

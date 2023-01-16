@@ -13,7 +13,7 @@ export const CartContextProvider = ({ children }) => {
     if (idx === -1) {
       setCartList([...cartList, producto]);
     } else {
-      cartList[idx].cantidad += producto.cantidad;
+      cartList[idx].amount += producto.amount;
 
       setCartList([...cartList]);
     }
@@ -23,12 +23,12 @@ export const CartContextProvider = ({ children }) => {
 
   const finalPrice = () =>
     cartList.reduce(
-      (count, product) => (count += product.cantidad * product.price),
+      (count, product) => (count += product.amount * product.price),
       0
     );
 
   const amountCartWidget = () =>
-    cartList.reduce((count, product) => (count += product.cantidad), 0);
+    cartList.reduce((count, product) => (count += product.amount), 0);
 
   const deleteItem = (id) =>
     setCartList(cartList.filter((product) => product.id !== id));

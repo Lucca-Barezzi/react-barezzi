@@ -7,11 +7,11 @@ import Loading from "../../Loading/Loading";
 const ItemDetailContainer = () => {
   const [product, setProduct] = useState({});
   const [loading, setLoading] = useState(true);
-  const { productoId } = useParams();
+  const { productId } = useParams();
 
   useEffect(() => {
     const datab = getFirestore();
-    const queryDoc = doc(datab, "productos", productoId);
+    const queryDoc = doc(datab, "productos", productId); //No le cambie el nombre de productos a products para no tener que cargar todo de vuelta en firebase :)
 
     getDoc(queryDoc)
       .then((respuesta) =>

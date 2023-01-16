@@ -1,77 +1,111 @@
-.titulo{text-align: center;
-color: rgb(134, 134, 134);
-font-size: 3rem;
-background-color: gainsboro;
-font-weight: bolder;}
-
-.item{text-align: center;
-font-size: 2rem;}
-
-.Grcart{height: 50px;}
-
-.carga{margin:10% 35%;
-font-size: 4rem;
-white-space: nowrap;}
-
-.fotos{height: 25vh!important;
-    border: solid;
-    width: 15vw;
-color: black;
+.titulo {
+  text-align: center;
+  color: rgb(134, 134, 134);
+  font-size: 3rem;
+  background-color: gainsboro;
+  font-weight: bolder;
 }
 
-.productos{color: black;}
+.item {
+  text-align: center;
+  font-size: 2rem;
+}
 
-.fondo{background-image: url("https://img.freepik.com/fotos-premium/fondo-textura-papel-arrugado-negro-oscuro-cerca_99266-411.jpg?w=2000")!important;
-min-height: 100vh;
-height: 100%;
-width: 100%;}
+.Grcart {
+  height: 50px;
+}
 
-.navg{background:linear-gradient(to bottom,black,rgb(30, 30, 30),rgb(70, 69, 69))!important;
-font-family:cursive}
+.carga {
+  margin: 10% 35%;
+  font-size: 4rem;
+  white-space: nowrap;
+}
 
-.card-header{text-decoration: none!important;}
+.fotos {
+  height: 25vh !important;
+  border: solid;
+  width: 15vw;
+  color: black;
+}
 
-A:link {text-decoration: none }
+.productos {
+  color: black;
+}
 
-.cart{background-color: white;}
+.backgroundImg {
+  background-image: url("https://img.freepik.com/fotos-premium/fondo-textura-papel-arrugado-negro-oscuro-cerca_99266-411.jpg?w=2000") !important;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+}
 
-.cursive{font-family: cursive!important;}
+.navg {
+  background: linear-gradient(
+    to bottom,
+    black,
+    rgb(30, 30, 30),
+    rgb(70, 69, 69)
+  ) !important;
+  font-family: cursive;
+}
 
+.card-header {
+  text-decoration: none !important;
+}
 
+A:link {
+  text-decoration: none;
+}
 
+.cursive {
+  font-family: cursive !important;
+}
 
 .loader {
-    margin:auto;
-    border: 10px solid #f3f3f3; /* color de borde del círculo */
-    border-top: 8px solid #3498db; /* color del borde superior */
-    border-radius: 50%; /* hace que el círculo sea redondo */
-    width: 150px; /* tamaño del círculo */
-    height: 150px; /* tamaño del círculo */
-    animation: spin 2s linear infinite; /* animación para hacer que el círculo gire */
+  margin: auto;
+  border: 10px solid #f3f3f3; /* color de borde del círculo */
+  border-top: 8px solid #3498db; /* color del borde superior */
+  border-radius: 50%; /* hace que el círculo sea redondo */
+  width: 150px; /* tamaño del círculo */
+  height: 150px; /* tamaño del círculo */
+  animation: spin 2s linear infinite; /* animación para hacer que el círculo gire */
 }
 
 /* keyframe de la animación */
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
-.cartFoto{width: 10rem;
-height: 12rem;
-margin-top: 1rem;}
+.cartFoto {
+  width: 10rem;
+  height: 12rem;
+  margin-top: 1rem;
+}
 
-.Footer{position: absolute;
-bottom: 0;
-margin-top: 2rem!important;
-width: 100%;}
+.Footer {
+  position: absolute;
+  bottom: 0;
+  margin-top: 2rem !important;
+  width: 100%;
+}
 
-.body{position: relative;
-padding-bottom: 1rem;
-min-height: 100vh
-;}
+.body {
+  position: relative;
+  padding-bottom: 1rem;
+  min-height: 100vh;
+}
 
-.descripcion{font-size: 1rem ;}
+.descripcion {
+  font-size: 1rem;
+}
 
-.form{width: 50vw;
-color: white;
-font-family: cursive;}
+.form {
+  width: 50vw;
+  color: white;
+  font-family: cursive;
+}

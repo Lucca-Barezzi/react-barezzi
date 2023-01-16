@@ -10,26 +10,25 @@ import NavBar from "./Components/NavBar/NavBar";
 function App() {
   return (
     <CartContextProvider>
-      <div className="fondo">
+      <div className="backgroundImg">
         <BrowserRouter>
-        <NavBar/>
+          <NavBar />
           <Routes>
             <Route path="/" element={<ItemListContainer />} />
             <Route
-              path="/category/:categoriaId" element={<ItemListContainer />}
+              path="/category/:categoryId"
+              element={<ItemListContainer />}
             />
             <Route
-              path="/detail/:productoId"
+              path="/detail/:productId"
               element={<ItemDetailContainer />}
             />
-            <Route path="/cart" element={<CartContainer />} /> 
+            <Route path="/cart" element={<CartContainer />} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
-         
         </BrowserRouter>
       </div>
     </CartContextProvider>
-  
   );
 }
 
