@@ -21,15 +21,15 @@ const NavBar = (   ) => {
         <li className="nav-item">  <NavLink className={"navMargin cat cursive text-decoration-underline"} to= '/'  href="#">Home</NavLink>
         </li>
         <li className="nav-item">
-        <NavLink className={"navMargin cat cursive text-decoration-underline"} to="/category/remeras"   href="#">Remeras</NavLink>
+        <NavLink className={"navMargin cat cursive text-decoration-underline"} to="/category/shirts"   href="#">Shirts</NavLink>
         </li>
         <li className="nav-item">
-        <NavLink className={"navMargin cat cursive text-decoration-underline"} to="/category/gorras"  href="#">Gorras</NavLink>
+        <NavLink className={"navMargin cat cursive text-decoration-underline"} to="/category/caps"  href="#">Caps</NavLink>
         </li>
       </ul>
 </div>
 
-     <NavLink  className={"fw-bold fs-1  text-danger cursive text-center title  "}to='/' href="#">Mi Tienda</NavLink>'
+     <NavLink  className={"fw-bold fs-1  text-danger cursive text-center title  "}to='/' href="#">Mi Store</NavLink>'
     
       <Link to='/cart' >
 <CartWidget/>

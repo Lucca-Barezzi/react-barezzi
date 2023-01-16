@@ -6,8 +6,11 @@ const CartContainer = () => {
   const { cartList, deleteCart, finalPrice, deleteItem } = useCartContext();
   let button;
 
+
+
+
   if (cartList.length === 0) {
-    button = <Link className="btn btn-danger fs-3 cursive" to='/home'>Volver al Home <br /><h1 className="text-muted fs-2 cursive">(Carrito Vacio)</h1> </Link>;
+    button = <Link className="btn btn-danger fs-3 cursive" to='/home'>Go Home <br /><h1 className="text-muted fs-2 cursive">(Cart Empty)</h1> </Link>;
   }
   return (
     <div>
@@ -24,7 +27,8 @@ const CartContainer = () => {
         </li>
       ))}
 
-      {cartList.lenght > 0 && (
+{cartList.length > 0  ? 
+                  
         <>
           {" "}
           <h1 className="text-white">Total Price:$ {finalPrice()}</h1>
@@ -33,7 +37,8 @@ const CartContainer = () => {
             Delete Cart
           </button>
         </>
-      )}
+      :("")}
+
 
       <center> <div >{button}
       </div>   </center>

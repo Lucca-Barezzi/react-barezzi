@@ -66,7 +66,7 @@ const InputForm = () => {
 return (
     <>
       {!loading && !orderId && cartList.length > 0 && (
-        <Form onSubmit={createOrder}>
+        <Form className="form" onSubmit={createOrder}>
           <Form.Group className="mb-3 " controlId="formPeople">
             <Form.Label>Name</Form.Label>
             <Form.Control
@@ -86,6 +86,7 @@ return (
             />
             <Form.Label>Phone Number</Form.Label>
             <Form.Control
+            className=""
               type="number"
               name="phone"
               value={dataForm.phone}
@@ -93,6 +94,7 @@ return (
               placeholder="Enter your phone number"
             />
             <Form.Control
+              className="mt-2"
               type="text"
               name="email"
               placeholder="Email"
@@ -101,6 +103,7 @@ return (
               required
             />
             <Form.Control
+              className="mt-2"
               type="text"
               name="confirmEmail"
               placeholder="Confirm your email"
@@ -122,7 +125,7 @@ return (
         <>
         
          <h2 className="bg-dark text-white cursive" style={{ color: "red" , width:"60vw" }}>
-            Su orden fue recibida con exito Id: {orderId}
+            Your order has been succesfully received Id: {orderId}
           </h2>
         </>
       )}
